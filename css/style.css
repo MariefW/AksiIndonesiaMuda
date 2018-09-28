@@ -1,0 +1,356 @@
+#about{
+	padding: 50px 0;
+	background-color: #4f79a4;
+}
+#galeri{
+	padding-bottom: 1px;
+}
+#gambar{
+	background-image: url(../img/header-aim.png);
+	opacity: 0.9;
+}
+#footer{
+	font-family: sans-serif;
+	text-align: center;
+	background-color: white;
+	color: black;
+	box-shadow: 0 0px 12px 2px rgba(86, 99, 116, 0.25);
+}
+.footer{
+	font-size: 12px;
+	margin-top: -5px;
+}
+ul, .social-network{
+	list-style: none;
+	display: inline;
+	margin-left: 0 !important;
+	padding: 0px;
+}
+.fa{
+	font-size: 14px;
+    width: 34px;
+	border-radius: 50%;
+	text-decoration: none;
+	list-style-type: none;
+	margin: 5px 2px;
+	text-align: center;
+	padding: 10px;	
+	font-family: FontAwesome;
+	display: inline-block;
+	font-style: normal;
+}
+.fa-facebook {
+  	background: #3B5998;
+  	color: white;
+}
+.fa-twitter {
+  	background: #55ACEE;
+  	color: white;
+}
+.fa-youtube {
+  	background: #bb0000;
+  	color: white;
+}
+
+.fa-instagram {
+  	background: #125688;
+  	color: white;
+}
+.fa:hover{
+	opacity: 0.7;
+	color: white;
+}
+#section-footer{
+	height: 120px;
+	line-height: 3rem;
+	padding-top: 20px;
+}
+.btn{
+	border-radius: 10px;
+	opacity: 0.9s;
+	padding-right: 60px;
+	padding-left: 60px;
+	font-weight: 800;
+	margin-top: 15px;
+}
+.ml12 {
+  font-weight: 100;
+  letter-spacing: 0.0rem;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+  font-size: 0.7em;
+}
+.ml10 {
+  position: relative;
+  font-weight: 900;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+#text-faded{
+	font-family: arial;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 2rem;
+	color: #fff;
+}
+#text:hover{
+	transition: 0.8s;
+	background-color: rgba(198, 178, 178, 0.7);
+	border-radius: 4px;
+	color: #FFF;
+}
+#icon-phone:hover, #message:hover{
+	color: #dc3545;
+	transition: 0.5s;
+}
+#button-blog{
+	padding-right: 15px;
+	padding-left: 23px;
+	font-family: arial;
+	font-weight: 300;
+}
+#body{
+	background: url(http://localhost/metronic/dist/default/assets/app/media/img//bg/bg-3.jpg) center center fixed;
+	background-size: cover;
+}
+.donasi-text{
+	font-family: sans-serif;
+	color: #9e97aa;
+	font-size: 30px;
+	margin-top: -10px;
+	opacity: 0.7;
+}
+#donasi{
+	background-color: #dc3545;
+	border-color: #dc3545;
+	color: white;
+	opacity: 0.8;
+}
+#jual{
+	background-color: #dc3545;
+	border-color: #dc3545;
+	color: white;
+	opacity: 0.8;
+	padding-left: 75px;
+    padding-right: 75px;
+}
+#donasi:hover{
+	background-color: white;
+	color: black;
+	transition: 0.5s;
+}
+#jual:hover{
+	transition: 0.5s;
+	color: black;
+	background-color: white;
+}
+#donasi-contact{
+	border-radius: 5px;
+	margin-bottom: 90px;
+	margin-top: 40px;
+}
+.text-form{
+	font-weight: 600;
+	color: #9e97aa;
+	opacity: 0.7;
+	font-size: 15px;
+	margin-top: 12px;
+}
+#nama, #email, #telepon, #exampleFormControlSelect1, #customFile, #pesan{
+	background: white;
+	box-shadow: 0 0px 12px 2px rgba(86, 99, 116, 0.25);
+	border-color: white;
+}
+.ayo-donasi{
+	line-height: 70px;
+	margin-top: -90px;
+	font-family: angelina;
+	color: black;
+	font-size: 35px;
+}
+#style-background{
+	padding-top: 35px;
+	height: 700px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 0px 12px 2px rgba(86, 99, 116, 0.25);
+	opacity: 0.8;
+}
+.form-group{
+	margin-bottom: 2rem;
+}
+.text-cap{
+	font-family: sans-serif;
+	font-weight: 600; 
+	color: #999;
+}
+#text-cap{
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: #999;
+}
+#aim-picture{
+	height: 55px;
+}
+.text-kegiatan{
+	font-family: sans-serif;
+	font-weight: 300;
+	color: #999;
+	opacity: 0.7;
+}
+.text-semibold{
+	color: #999;
+	font-family: sans-serif;
+	font-weight: 700;
+}
+.button-filter{
+	font-family: sans-serif;
+	font-weight: 600;
+	border-radius: 5px;
+}
+.button-filter:hover{
+	color: #999;
+}
+#button-box{
+	text-transform: capitalize;
+	font-family: arial;
+	font-weight: 500;
+	background-color: #dc3545;
+	border-color: #dc3545;
+	color: #fff;
+	display: inline-block;
+	border-radius: 5px;
+	padding-right: 25px;
+	padding-left: 21px;
+}
+#button-box:hover{
+	background-color: #e04756;
+	color: white;
+}
+.box-content.box-6
+{
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid #DDD;
+}
+.box-content.box-6 .box-item
+{
+	background-color: #fff;
+	margin: 0 15px 30px;
+	border: 1px solid #eee;
+	max-width: 500px;
+}
+.box-content.box-6 .box-item .content
+{
+	padding: 10px 30px 30px;
+	background-color: white;
+	box-shadow: 0 0px 12px 2px rgba(86, 99, 116, 0.25);
+}
+.box-content.box-6 .box-item img 
+{
+	width: 100%;
+}
+.box-content.box-6 .box-item .content h3
+{
+	font-weight: 500;
+	font-size: 24px;
+	margin-bottom: 20px;
+} 
+.box-content.box-6 .box-item .content h3 a
+{
+	color: #333;
+}
+.box-content.box-6 .box-item .content span
+{
+	color: #a9a9a9;
+	font-size: 13px;
+}
+#judul-post{
+	font-family: arial;
+	font-weight: 400;
+ }
+ #control-file{
+ 	color: black;
+ }
+#button-kirim{
+	box-shadow: 0 0px 12px 2px rgba(86, 99, 116, 0.25);
+	border: none;
+}
+#button-kirim:hover{
+	background-color: #ba3a3a;
+	box-shadow: 0 0px 12px 2px rgba(86, 99, 116, 0.25);
+}
+#story{
+	background: #4f79a4;
+	padding: 50px 0;
+}
+.subtitle{
+	font-family: arial;
+	font-weight: 300;
+	font-size: 20px;
+	color: #fff;
+}
+.ttl1{
+	margin-bottom: 20px;
+	font-family: arial;
+	font-family: 30px;
+	font-weight: 500;
+	display: inline-block;
+}
+#masalah{
+	background: #2e3c51;
+	padding: 60px 0;
+}
+#subtitle{
+	font-size: 12px;
+	color: #000000;
+}
+.nomor{
+	background-color: #dc3545;
+	position: absolute;
+	top: -10px;
+	font-family: arial;
+	font-weight: 300;
+	font-size: 15px;
+	color: #fff;
+	margin: 5px -18px;
+	padding: 2px 10px;
+	border-radius: 20px;
+}
+#langkah{
+	padding: 80px 0;
+}
+.rectangle{
+	height: 50px;
+  	max-width: 300px;
+  	color: black;
+  	border-radius: 5px;
+  	background-color: #2e3c51;
+  	color: #fff;
+	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+#lead{
+	border-color: #fff;
+}
+.img-sedangkan{
+	height: 50px;
+}
