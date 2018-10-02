@@ -1,0 +1,49 @@
+/* navbar */
+.navbar-default {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #2d7adc; }
+  .navbar-default .navbar-nav > li > a {
+    color: #fff; }
+  .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > li:focus {
+    background-color: #2472d6; }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #fff; }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #2472d6;
+    color: #fff; }
+
+.navbar-btn {
+  color: #fff; }
+  .navbar-btn:hover, .navbar-btn:focus {
+    background-color: #2472d6; }
+
+.navbar-nav .dropdown-menu {
+  border-top-color: #1f62b7; }
+
+/* sidebar */
+#wrapper .sidebar {
+  background-color: #383838; }
+
+.sidebar .nav > li > a {
+  color: #d6e1f1; }
+  .sidebar .nav > li > a:hover, .sidebar .nav > li > a:focus, .sidebar .nav > li > a.active {
+    color: #00AAFF; }
+  .sidebar .nav > li > a:focus, .sidebar .nav > li > a.active {
+    background-color: #383838;
+    color: #00AAFF; }
+
+.sidebar .nav .nav {
+  background-color: #383838; }
+  .sidebar .nav .nav > li > a.active {
+    background-color: #333333; }
+
+.sidebar-minified .sidebar .nav > li:hover > a,
+.sidebar-minified .sidebar .nav > li:hover > a span,
+.sidebar-minified .sidebar .nav > li:hover .collapse li:hover > a,
+.sidebar-minified .sidebar .nav > li:hover .collapse li:hover > a span {
+  background-color: #383838;
+  color: #00AAFF; }
+
+/*# sourceMappingURL=blue.css.map */
