@@ -1,0 +1,56 @@
+#wrapper .sidebar {
+  background-color: #2B333E; }
+
+.sidebar .nav > li > a {
+  color: #d6e1f1; }
+  .sidebar .nav > li > a:hover, .sidebar .nav > li > a:focus, .sidebar .nav > li > a.active {
+    color: #00AAFF; }
+  .sidebar .nav > li > a:focus, .sidebar .nav > li > a.active {
+    background-color: #2B333E;
+    color: #00AAFF; }
+
+.sidebar .nav .nav {
+  background-color: #2B333E; }
+  .sidebar .nav .nav > li > a.active {
+    background-color: #272e38;
+    color: #d6e1f1; }
+
+.sidebar-minified .sidebar .nav > li:hover > a,
+.sidebar-minified .sidebar .nav > li:hover > a span,
+.sidebar-minified .sidebar .nav > li:hover .collapse li:hover > a,
+.sidebar-minified .sidebar .nav > li:hover .collapse li:hover > a span {
+  background-color: #2B333E;
+  color: #00AAFF; }
+
+.sidebar {
+  border-right-color: #2B333E; }
+
+.right-sidebar {
+  background-color: #2B333E;
+  color: #fff; }
+  .right-sidebar .widget-header {
+    background-color: #272e38;
+    border-color: #232932; }
+    .right-sidebar .widget-header .show-all {
+      color: #7d93b3; }
+  .right-sidebar .icon-transparent-area .badge {
+    border-color: #2B333E; }
+  .right-sidebar .list-project-progress .project-name,
+  .right-sidebar .list-project-progress .percentage {
+    color: #fff; }
+  .right-sidebar .list-file-simple a, .right-sidebar .list-file-simple a:hover, .right-sidebar .list-file-simple a:focus {
+    color: #fff; }
+  .right-sidebar .list-file-simple span {
+    color: #fff; }
+  .right-sidebar .btn-default {
+    background-color: #232932;
+    border-color: #1e242c;
+    color: #fff; }
+    .right-sidebar .btn-default:hover, .right-sidebar .btn-default:focus {
+      background-color: #1e242c;
+      border-color: #1a1f26; }
+    .right-sidebar .btn-default.active:hover, .right-sidebar .btn-default.active:focus, .right-sidebar .btn-default:active:hover, .right-sidebar .btn-default:active:focus {
+      border-color: #1a1f26;
+      color: #fff; }
+
+/*# sourceMappingURL=sidebar-nav-darkblue.css.map */

@@ -1,0 +1,18 @@
+.vertical-align-middle{
+	opacity: 0.8;
+}
+#btn-login{
+	padding-right: 50px;
+	padding-left: 40px;
+	background-image: url(bg-1.jpg);
+	border-color: #8100ff;
+	color: #fff;
+}
+#btn-login:hover{
+	background-color: #8100ff;
+	transition: 0.5s;
+	color: #fff;
+}
+.profile-left{
+	height: 120%;
+}

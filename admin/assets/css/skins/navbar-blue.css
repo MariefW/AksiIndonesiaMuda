@@ -1,0 +1,24 @@
+.navbar-default {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #2d7adc; }
+  .navbar-default .navbar-nav > li > a {
+    color: #fff; }
+  .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > li:focus {
+    background-color: #2472d6; }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #fff; }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #2472d6;
+    color: #fff; }
+
+.navbar-btn {
+  color: #fff; }
+  .navbar-btn:hover, .navbar-btn:focus {
+    background-color: #2472d6; }
+
+.navbar-nav .dropdown-menu {
+  border-top-color: #1f62b7; }
+
+/*# sourceMappingURL=navbar-blue.css.map */
