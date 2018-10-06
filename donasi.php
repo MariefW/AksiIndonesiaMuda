@@ -17,7 +17,9 @@
     <!-- Bootstrap for JS-->
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/linearicons/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
 
   </head>
   <body id="body">
@@ -74,11 +76,22 @@
         }
     }
     ?>
+    <div id='loader'>
+      <div class="spinner"></div>
+    </div>
 
+    <script>
+      window.addEventListener('load', () => {
+        const loader = document.getElementById('loader');
+        setTimeout(() => {
+          loader.classList.add('fadeOut');
+        }, 500);
+      });
+    </script>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="box-shadow: 0 0px 12px 2px rgba(86, 99, 116, 0.25);background-color: white;">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/judul1.png" alt="No gambar" id="aim-picture"></a>
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/Logo Aim.png" alt="No gambar" id="aim-picture"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -95,42 +108,62 @@
         </div>
   </div>
   <div id="donasi-contact" class="container-fluid" style="max-width: 700px;">
-       <div class="col-sm-12" id="style-background" style="height: 780px;">
-          <h2 class="text-cap text-center">Form Donasi</h2>
+       <div class="col-sm-12" id="style-background" style="height: 720px;">
+          <h2 class="text-cap text-center">Pengisian data pendonatur</h2>
           <p class="text-center" id="text-cap">#ayodonasi</p>
           <form id="form-group" style=" font-family: sans-serif; font-weight: 500; margin-top: 45px;" id="myForm" action="#" method="POST" onSubmit="validasi()">
-            <div class="form-group">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="lnr lnr-user"></i></span>
+              </div>
               <input align="center" name="nama" type="text" class="form-control" id="nama" placeholder="Nama" required="">
             </div>
-            <div class="form-group">
+            <div class="input-group mb-3">
+               <div class="input-group-prepend">
+                <span class="input-group-text"><i class="lnr lnr-phone"></i></span>
+              </div>
               <input type="tel" name="nomor" class="form-control" id="telepon" placeholder="No. Telepon" required="">
             </div>
-            <div class="form-group">
+            <div class="input-group mb-3">
+               <div class="input-group-prepend">
+                <span class="input-group-text"><i class="lnr lnr-home"></i></span>
+              </div>
               <input align="center" name="alamat" type="text" class="form-control" id="nama" placeholder="Alamat" required="">
             </div>
-            <div class="form-group">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="lnr lnr-envelope"></i></span>
+              </div>
               <input type="email" name="email" class="form-control" id="email" placeholder="Email" required="">
             </div>
-            <div class="form-group">
-              <select class="form-control" name="donasi" id="exampleFormControlSelect1">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="lnr lnr-magnifier"></i></span>
+              </div>
+              <select class="form-control" name="donasi" id="lainnya" required="">
                 <option class="active">Jenis Donasi</option>
-                <option>Pakaian</option>
-                <option>Alat Tulis</option>
-                <option>Sepatu</option>
-                <option>Tas</option>
-                <option>Sepatu</option>
-                <option>Kertas</option>
-                <option>Dana</option>
-                <option>Lainnya</option>
+                <option value="pakaian">Pakaian</option>
+                <option value="atk">Alat Tulis</option>
+                <option value="sepatu">Sepatu</option>
+                <option value="tas">Tas</option>
+                <option value="kertas">Kertas</option>
+                <option value="dana">Dana</option>
+                <option value="lainnya">Lainnya</option>
               </select>
             </div>
+            <div class="text-center" ="Lainnya">
+              <input type="text" class="form-control" id="inputan" name="text" hidden="" required="" placeholder="Lainnya">
+            </div>
+            <br>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1" style="color: black">Pesan</label>
-              <textarea class="form-control" name="pesan" id="pesan" rows="3" style="height: 100px;"></textarea>
+              <label for="exampleFormControlTextarea1" style="color: black">Keterangan :</label>
+              <textarea class="form-control" name="pesan" id="pesan" rows="3" style="height: 100px;" placeholder="Silahkan masukkan keterangan" required=""></textarea>
             </div>
             <div class="form-group row">
               <div class="col-sm-10">
-                <button type="submit" name="submit" class="btn btn-danger" style="font-weight: 600;" id="button-kirim">Kirim</button>
+                <button type="submit" name="submit" class="btn btn-danger" id="button-kirim">
+                  <span>Donasi Sekarang</span>
+                </button>
                 <p style="font-family: sans-serif; font-weight: 500; font-size: 12px; margin-top: 5px; color: black;">Silahkan isi semua data yang ada diatas!</p>
               </div>
             </div>
@@ -141,26 +174,25 @@
     <div class="container-fluid" id="section-footer">
       <div class="row animated opacity mar-bot20" data-animation="animation">
       <div class="col-sm-12 align-center">
-      <ul class="sosial-network social-circle">
-        <li>
-          <a href="https://www.facebook.com/AksiIndonesiaMuda/" class="fa fa-facebook" id="IcoFacebook"></a>
-          <a href="https://twitter.com/aksi_muda?lang=en" class="fa fa-twitter" id="IcoTwitter"></a>
-          <a href="https://www.instagram.com/aksiindonesiamuda/?hl=en" class="fa fa-instagram" id="IcoInstagram"></a>
-          <a href="https://www.youtube.com/channel/UCobAaXnaHznKbNMyNyoR9vw" class="fa fa-youtube" id="IcoYoutube"></a>
-        </li>
-    </ul>
+        <ul class="sosial-network social-circle">
+          <li>
+            <i href="https://www.facebook.com/AksiIndonesiaMuda/" class="fa fa-facebook" id="IcoFacebook"></i>
+            <i href="https://twitter.com/aksi_muda?lang=en" class="fa fa-twitter" id="IcoTwitter"></i>
+            <i href="https://www.instagram.com/aksiindonesiamuda/?hl=en" class="fa fa-instagram" id="IcoInstagram"></i>
+            <i href="https://www.youtube.com/channel/UCobAaXnaHznKbNMyNyoR9vw" class="fa fa-youtube" id="IcoYoutube"></i>
+          </li>
+       </ul>
+      </div>
+      <div class="col-sm-12 align-center">
+         <p style="margin-bottom: 1px;" class="footer">© Copyright 2018 Aksi Indonesia Muda</p>
       </div>
       </div>
-    <div class="row align-center copyright">
-      <div class="col-sm-12">
-        <p style="margin-bottom: 1px;" class="footer">Copyright © Aksi Indonesia Muda</p>
-      </div>
-    </div>
     </div>
     </div>
     <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript">
     function validasi(){
       var nama = document.getElementById("nama").value;
@@ -174,6 +206,17 @@
         alert('Anda Harus mengisi data dengan lengkap !');
       }
     }
+
+    // Lainnya
+    $(window).load(function(){
+    $("#lainnya").change(function() {
+      if ($("#lainnya option:selected").val() == 'lainnya') {
+        $('#inputan').prop('hidden', false);
+      } else {
+        $('#inputan').prop('hidden', 'true');
+      }
+      });
+    });
   </script>
 </body>
 </html>
