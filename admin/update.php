@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
-
+<?php
+	include_once("../config/Functions.php");
+	$functions = new Functions();
+ ?>
 <head>
 	<title>Dashboard | Aksi Indonesia Muda</title>
 	<meta charset="utf-8">
@@ -84,18 +87,18 @@
 					<h1 class="page-title">Update Total Dana</h1>
 					<div class="col-md-12">
 						<!-- CONTACT FORM -->
-						<div class="panel">
+						<div class="panel" method="post">
 							<div class="panel-heading">
 								<h3 class="panel-title">Input Total Dana</h3>
 							</div>
 							<div class="panel-body">
-								<form>
+								<form method="post">
 									<div class="input-group">
 										<span class="input-group-addon">Rp.</span>
-										<input type="text" name="" class="form-control" placeholder="Total">
+										<input type="text" name="dana" class="form-control" placeholder="<?php $functions->fetchdana(); ?>">
 									</div>
 									<br>
-									<button type="submit" class="btn btn-primary"><i class="fa fa-refresh"></i>Update</button>
+									<button type="submit" name="update"class="btn btn-primary"><i class="fa fa-refresh"></i>Update</button>
 								</form>
 							</div>
 						</div>
@@ -126,5 +129,13 @@
 				}
 			});
 		</script>
+
+		<?php
+		if(isset($_POST['update']))
+		{
+			$name = $functions->updateDana();
+			// header('Location: update.php');
+		}
+		 ?>
 </body>
 </html>
