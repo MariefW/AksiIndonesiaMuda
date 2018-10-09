@@ -59,7 +59,7 @@
 				<nav>
 					<ul class="nav">
 						<li>
-							<a href="halaman-admin.html"><i class="lnr lnr-home"></i> <span>Dashboards</span></a>
+							<a href="index.php"><i class="lnr lnr-home"></i> <span>Dashboards</span></a>
 						</li>
 						<li>
 							<a href="#blog" data-toggle="collapse" class="collapsed"><i class="fa fa-navicon"></i> <span>Blog</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
@@ -126,7 +126,7 @@
 									<form>
 										<div class="form-group">
 											<label  class="form-control-label">
-												Admin 
+												Admin
 											</label>
 											<input type="text" class="form-control" id="" placeholder="Aksi Indonesia Muda">
 										</div>
@@ -138,19 +138,19 @@
 										</div>
 										<div class="form-group">
 											<label  class="form-control-label">
-												Mobile 
+												Mobile
 											</label>
 											<input type="text" class="form-control" id="">
 										</div>
 										<div class="form-group">
 											<label  class="form-control-label">
-												Email 
+												Email
 											</label>
 											<input type="Email" class="form-control" id="">
 										</div>
 										<div class="form-group">
 											<label  class="form-control-label">
-												Website 
+												Website
 											</label>
 											<input type="text" class="form-control" id="">
 										</div>

@@ -60,7 +60,7 @@
 			<div class="sidebar-scroll">
 				<nav>
 					<ul class="nav">
-						<li><a href="halaman-admin.html"><i class="lnr lnr-home"></i> <span>Dashboards</span></a></li>
+						<li><a href="index.php"><i class="lnr lnr-home"></i> <span>Dashboards</span></a></li>
 						<li>
 							<a href="#blog" data-toggle="collapse"><i class="fa fa-navicon"></i> <span>Blog</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="blog" class="collapse ">

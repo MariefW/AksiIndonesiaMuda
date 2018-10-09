@@ -56,7 +56,7 @@
 			<div class="sidebar-scroll">
 				<nav>
 					<ul class="nav">
-						<li><a href="halaman-admin.html"><i class="lnr lnr-home"></i> <span>Dashboards</span></a></li>
+						<li><a href="index.php"><i class="lnr lnr-home"></i> <span>Dashboards</span></a></li>
 						<li>
 							<a href="#blog" data-toggle="collapse" class="active"><i class="fa fa-navicon"></i> <span>Blog</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="blog" class="collapse ">
@@ -112,7 +112,7 @@
 												<td>
 													<p>
 														Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-													</p>	
+													</p>
 												</td>
 												<td>Berita</td>
 												<td>
@@ -177,25 +177,25 @@
 									<form>
 										<div class="form-group">
 											<label  class="form-control-label">
-												Id 
+												Id
 											</label>
 											<input type="number" class="form-control" id="">
 										</div>
 										<div class="form-group">
 											<label  class="form-control-label">
-												Judul Blog 
+												Judul Blog
 											</label>
 											<input type="text" class="form-control" id="">
 										</div>
 										<div class="form-group">
 											<label  class="form-control-label">
-												Penulis 
+												Penulis
 											</label>
 											<input type="text" class="form-control" id="">
 										</div>
 										<div class="form-group">
 											<label  class="form-control-label">
-												Tanggal 
+												Tanggal
 											</label>
 											<input type="date" class="form-control" id="">
 										</div>
@@ -210,7 +210,7 @@
 										</div>
 										<div class="form-group">
 											<label  class="form-control-label">
-												Kategori 
+												Kategori
 											</label>
 											<input type="text" class="form-control" id="">
 										</div>

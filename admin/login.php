@@ -43,7 +43,7 @@
 									<input type="text" name="" class="form-control" placeholder="Password" style="
 									background-image: url(bg-1.jpg); color: #fff; border-color: #8100ff;">
 								</div>
-								<a href="halaman-admin.html" type="submit" class="btn btn-default" id="btn-login"><i class="fa fa-user"></i>Login</a>
+								<a href="index.php" type="submit" class="btn btn-default" id="btn-login"><i class="fa fa-user"></i>Login</a>
 							</form>
 						</div>
 				</div>

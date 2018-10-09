@@ -58,19 +58,19 @@
 				<nav>
 					<ul class="nav">
 						<li>
-							<a href="halaman-admin.html" data-toggle="collapse" class="active"><i class="lnr lnr-home"></i> <span>Dashboards</span></a>
+							<a href="index.php" data-toggle="collapse" class="active"><i class="lnr lnr-home"></i> <span>Dashboards</span></a>
 						</li>
 						<li>
 							<a href="#blog" data-toggle="collapse" class="collapsed"><i class="fa fa-navicon"></i> <span>Blog</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="blog" class="collapse ">
 								<ul class="nav">
-									<li><a href="daftar-blog.html">Daftar Blog</a></li>
-									<li><a href="tambah-blog.html">Tambah Blog</a></li>
+									<li><a href="daftar-blog.php">Daftar Blog</a></li>
+									<li><a href="tambah-blog.php">Tambah Blog</a></li>
 								</ul>
 							</div>
 						</li>
-						<li><a href="update.html"><i class="fa fa-refresh"></i> <span>Update</span></a></li>
-						<li><a href="profile.html"><i class="lnr lnr-user"></i> <span>Profile</span></a></li>
+						<li><a href="update.php"><i class="fa fa-refresh"></i> <span>Update</span></a></li>
+						<li><a href="profile.php"><i class="lnr lnr-user"></i> <span>Profile</span></a></li>
 					</ul>
 				</nav>
 			</div>
@@ -132,19 +132,19 @@
 							<form>
 								<div class="form-group">
 									<label  class="form-control-label">
-										Password Lama 
+										Password Lama
 									</label>
 									<input type="password" class="form-control" id="">
 								</div>
 								<div class="form-group">
 									<label  class="form-control-label">
-										Password Baru 
+										Password Baru
 									</label>
 									<input type="password" class="form-control" id="">
 								</div>
 								<div class="form-group">
 									<label  class="form-control-label">
-										Confirmasi Password 
+										Confirmasi Password
 									</label>
 									<input type="password" class="form-control" id="">
 								</div>
