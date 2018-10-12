@@ -57,7 +57,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/Logo AIM.png" alt="No gambar" id="aim-picture"></a>
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/LogoAIM.png" alt="No gambar" id="aim-picture"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -292,57 +292,57 @@
             </div>
             <div class="item">
               <div class="box-item">
-                <img src="img/galeri/slide24.jpg" class="img-responsive"/>
+                <img src="img/galeri/slide24.png" class="img-responsive"/>
               </div>
             </div>
             <div class="item">
               <div class="box-item">
-                <img src="img/galeri/slide25.jpg" class="img-responsive"/>
+                <img src="img/galeri/slide25.png" class="img-responsive"/>
               </div>
             </div>
             <div class="item">
               <div class="box-item">
-                <img src="img/galeri/slide26.jpg" class="img-responsive"/>
+                <img src="img/galeri/slide26.png" class="img-responsive"/>
               </div>
             </div>
             <div class="item">
               <div class="box-item">
-                <img src="img/galeri/slide27.jpg" class="img-responsive"/>
+                <img src="img/galeri/slide27.png" class="img-responsive"/>
               </div>
             </div>
             <div class="item">
               <div class="box-item">
-                <img src="img/galeri/slide28.jpg" class="img-responsive"/>
+                <img src="img/galeri/slide28.png" class="img-responsive"/>
               </div>
             </div>
             <div class="item">
               <div class="box-item">
-                <img src="img/galeri/slide29.jpg" class="img-responsive"/>
+                <img src="img/galeri/slide29.png" class="img-responsive"/>
               </div>
             </div>
             <div class="item">
               <div class="box-item">
-                <img src="img/galeri/slide30.jpg" class="img-responsive"/>
+                <img src="img/galeri/slide30.png" class="img-responsive"/>
               </div>
             </div>
             <div class="item">
               <div class="box-item">
-                <img src="img/galeri/slide31.jpg" class="img-responsive"/>
+                <img src="img/galeri/slide31.png" class="img-responsive"/>
               </div>
             </div>
             <div class="item">
               <div class="box-item">
-                <img src="img/galeri/slide32.jpg" class="img-responsive"/>
+                <img src="img/galeri/slide32.png" class="img-responsive"/>
               </div>
             </div>
             <div class="item">
               <div class="box-item">
-                <img src="img/galeri/slide33.jpg" class="img-responsive"/>
+                <img src="img/galeri/slide33.png" class="img-responsive"/>
               </div>
             </div>
             <div class="item">
               <div class="box-item">
-                <img src="img/galeri/slide34.jpg" class="img-responsive"/>
+                <img src="img/galeri/slide34.png" class="img-responsive"/>
               </div>
             </div>
           </div>
