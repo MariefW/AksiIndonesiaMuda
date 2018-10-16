@@ -35,6 +35,7 @@
         $alamat = $_POST['alamat'];
         $donasi = $_POST['donasi'];
         $message = $_POST['pesan'];
+        $lainnya = $_POST['lainnya'];
 
         // Cek apakah ada data yang belum diisi
         if(!empty($email) && !empty($name) && !empty($nomor) && !empty($alamat) && !empty($donasi) && !empty($message)){
@@ -44,7 +45,7 @@
                 $msgClassk = 'errordiv';
             }else{
                 // Pengaturan penerima email dan subjek email
-                $toEmail = 'aksiindonesiamuda@yahoo.com'; // Ganti dengan alamat email yang Anda inginkan
+                $toEmail = 'm.ariefw@xlfutureleaders.com'; // Ganti dengan alamat email yang Anda inginkan
                 $emailSubject = 'Pesan website dari '.$name;
                 $htmlContent = '<h2> Form Donasi </h2>
                     <h4>Nama</h4><p>'.$name.'</p>
@@ -52,6 +53,7 @@
                     <h4>Alamat</h4><p>'.$alamat.'</p>
                     <h4>Email</h4><p>'.$email.'</p>
                     <h4>Jenis Donasi</h4><p>'.$donasi.'</p>
+                    <h4></h4><p>'.$lainnya.'</p>
                     <h4>Pesan</h4><p>'.$message.'</p>';
 
                 // Mengatur Content-Type header untuk mengirim email dalam bentuk HTML
@@ -91,7 +93,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="box-shadow: 0 0px 12px 2px rgba(86, 99, 116, 0.25);background-color: white;">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/LogoAIM.png" alt="No gambar" id="aim-picture"></a>
+        <a class="navbar-brand js-scroll-trigger" href="index.php"><img src="img/LogoAIM.png" alt="No gambar" id="aim-picture"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -128,7 +130,7 @@
                <div class="input-group-prepend">
                 <span class="input-group-text"><i class="lnr lnr-home"></i></span>
               </div>
-              <input align="center" name="alamat" type="text" class="form-control" id="nama" placeholder="Alamat" required="">
+              <input align="center" name="alamat" type="text" class="form-control" id="alamat" placeholder="Alamat" required="">
             </div>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -151,8 +153,8 @@
                 <option value="lainnya">Lainnya</option>
               </select>
             </div>
-            <div class="text-center" ="Lainnya">
-              <input type="text" class="form-control" id="inputan" name="text" hidden="" required="" placeholder="Lainnya">
+            <div class="text-center" ="Lainnya" >
+              <input type="text" class="form-control" id="inputan" name="lainnya" hidden="" required="" placeholder="Lainnya">
             </div>
             <br>
             <div class="form-group">
@@ -176,10 +178,10 @@
       <div class="col-sm-12 align-center">
         <ul class="sosial-network social-circle">
           <li>
-            <i href="https://www.facebook.com/AksiIndonesiaMuda/" class="fa fa-facebook" id="IcoFacebook"></i>
-            <i href="https://twitter.com/aksi_muda?lang=en" class="fa fa-twitter" id="IcoTwitter"></i>
-            <i href="https://www.instagram.com/aksiindonesiamuda/?hl=en" class="fa fa-instagram" id="IcoInstagram"></i>
-            <i href="https://www.youtube.com/channel/UCobAaXnaHznKbNMyNyoR9vw" class="fa fa-youtube" id="IcoYoutube"></i>
+            <a href="https://www.facebook.com/AksiIndonesiaMuda/"> <i class="fa fa-facebook" id="IcoFacebook"></i></a>
+            <a href="https://twitter.com/aksi_muda?lang=en"> <i class="fa fa-twitter" id="IcoTwitter"></i></a>
+            <a href="https://www.instagram.com/aksiindonesiamuda/?hl=en"> <i class="fa fa-instagram" id="IcoInstagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCobAaXnaHznKbNMyNyoR9vw"> <i class="fa fa-youtube" id="IcoYoutube"></i></a>
           </li>
        </ul>
       </div>
@@ -199,7 +201,9 @@
       var number = document.getElementById("telepon").value;
       var email = document.getElementById("email").value;
       var pesan = document.getElementById("pesan").value;
-      if(nama != "" && number!="" && email !="" && pesan !=""){
+      var alamat = document.getElementById("alamat").value;
+      var lainnya = document.getElementById("inputan").value;
+      if(nama != "" && number!="" && email !="" && pesan !="" && alamat !="" && lainnya !=""){
         alert('Data anda telah terkirim, Silahkan menunggu konfirmasi kami melalui email');
         return true;
       }else{
