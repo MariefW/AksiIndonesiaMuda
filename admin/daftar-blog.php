@@ -41,9 +41,9 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/img/aim.png" class="img-circle" alt="Avatar"> <span>Aksi Indonesia Muda</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
-								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
-								<li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+								<!-- <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
+								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li> -->
+								<li><a href="logout.php"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -61,13 +61,13 @@
 							<a href="#blog" data-toggle="collapse" class="active"><i class="fa fa-navicon"></i> <span>Blog</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="blog" class="collapse ">
 								<ul class="nav">
-									<li><a href="daftar-blog.html" class="active">Daftar Blog</a></li>
-									<li><a href="tambah-blog.html">Tambah Blog</a></li>
+									<li><a href="daftar-blog.php" class="active">Daftar Blog</a></li>
+									<li><a href="tambah-blog.php">Tambah Blog</a></li>
 								</ul>
 							</div>
 						</li>
-						<li><a href="update.html"><i class="fa fa-refresh"></i> <span>Update</span></a></li>
-						<li><a href="page-profil.html"><i class="lnr lnr-user"></i> <span>Profil</span></a></li>
+						<li><a href="update.php"><i class="fa fa-refresh"></i> <span>Update Dana</span></a></li>
+						<!-- <li><a href="profil.php"><i class="lnr lnr-user"></i> <span>Profil</span></a></li> -->
 					</ul>
 				</nav>
 			</div>
@@ -76,10 +76,10 @@
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
 				<div class="container-fluid">
-					<ul class="breadcrumb">
+					<!-- <ul class="breadcrumb">
 						<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
 						<li>Daftar Blog</li>
-					</ul>
+					</ul> -->
 					<h1 class="page-title">Daftar Blog</h1>
 					<div class="row">
 						<div class="col-md-12">

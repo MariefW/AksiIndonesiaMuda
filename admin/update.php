@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <?php
@@ -45,9 +46,9 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/img/aim.png" class="img-circle" alt="Avatar"> <span>Aksi Indonesia Muda</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
-								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
-								<li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+								<!-- <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
+								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li> -->
+								<li><a href="logout.php"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -65,13 +66,13 @@
 							<a href="#blog" data-toggle="collapse"><i class="fa fa-navicon"></i> <span>Blog</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="blog" class="collapse ">
 								<ul class="nav">
-									<li><a href="daftar-blog.html">Daftar Blog</a></li>
-									<li><a href="tambah-blog.html">Tambah Blog</a></li>
+									<li><a href="daftar-blog.php">Daftar Blog</a></li>
+									<li><a href="tambah-blog.php">Tambah Blog</a></li>
 								</ul>
 							</div>
 						</li>
-						<li><a href="update.html" class="active"><i class="fa fa-refresh"></i> <span>Update</span></a></li>
-						<li><a href="profile.html"><i class="lnr lnr-user"></i> <span>Profil</span></a></li>
+						<li><a href="update.php" class="active"><i class="fa fa-refresh"></i> <span>Update Dana</span></a></li>
+						<!-- <li><a href="profile.php"><i class="lnr lnr-user"></i> <span>Profil</span></a></li> -->
 					</ul>
 				</nav>
 			</div>
@@ -80,10 +81,10 @@
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
 				<div class="container-fluid">
-					<ul class="breadcrumb">
+					<!-- <ul class="breadcrumb">
 						<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
 						<li>Update</li>
-					</ul>
+					</ul> -->
 					<h1 class="page-title">Update Total Dana</h1>
 					<div class="col-md-12">
 						<!-- CONTACT FORM -->
@@ -92,10 +93,10 @@
 								<h3 class="panel-title">Input Total Dana</h3>
 							</div>
 							<div class="panel-body">
-								<form method="post">
+								<form method="post" action="update.php">
 									<div class="input-group">
 										<span class="input-group-addon">Rp.</span>
-										<input type="text" name="dana" class="form-control" placeholder="<?php $functions->fetchdana(); ?>">
+										<input type="number" name="dana" class="form-control" placeholder="<?php $functions->fetchdana(); ?>">
 									</div>
 									<br>
 									<button type="submit" name="update"class="btn btn-primary"><i class="fa fa-refresh"></i>Update</button>
@@ -134,6 +135,7 @@
 		if(isset($_POST['update']))
 		{
 			$name = $functions->updateDana();
+			echo "<meta http-equiv='refresh' content='0'>";
 			// header('Location: update.php');
 		}
 		 ?>

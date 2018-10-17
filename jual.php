@@ -30,16 +30,17 @@
     $msgClass = '';
     if(isset($_POST['submit'])){
         // Get the submitted form data
-        $email = $_POST['email'];
-        $name = $_POST['nama'];
-        $nomor = $_POST['nomor'];
-        $alamat = $_POST['alamat'];
-        $jual = $_POST['jual'];
+        $email = $_POST['email']; //menyimpan email user
+        $name = $_POST['nama']; //menyimpan nama user
+        $nomor = $_POST['nomor']; //menyimpan nomor handphone
+        $alamat = $_POST['alamat']; //menyimpan alamat user
+        $jual = $_POST['jual']; //menyimpan barang yang ingin dijual
+        $message = $_POST['pesan']; //menyimpan keterangan tambahan
+        $lainnya = $_POST['lainnya']; //menyimpan barang yang di lainnya
         $harga = $_POST['harga'];
-        $message = $_POST['pesan'];
 
         // Cek apakah ada data yang belum diisi
-        if(!empty($email) && !empty($name) && !empty($nomor) && !empty($alamat) && !empty($jual) && !empty($harga) && !empty($message)){
+        if(!empty($email) && !empty($name) && !empty($nomor) && !empty($alamat) && !empty($jual) && !empty($message)){
 
             if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
                 $statusMsg = 'Please enter your valid email.';
@@ -53,9 +54,10 @@
                     <h4>Nomor Hp.</h4><p>'.$nomor.'</p>
                     <h4>Alamat</h4><p>'.$alamat.'</p>
                     <h4>Email</h4><p>'.$email.'</p>
-                    <h4>Jenis Barang</h4><p>'.$jual.'</p>
-                    <h4>Harga Barang</h4><p>'.$harga.'</p>
-                    <h4>Pesan</h4><p>'.$message.'</p>';
+                    <h4>Jenis Donasi</h4><p>'.$donasi.'</p>
+                    <h4></h4><p>'.$lainnya.'</p>
+                    <h4>Harga</h4><p>'.$harga.'</p>
+                    <h4>Keterangan</h4><p>'.$message.'</p>';
 
                 // Mengatur Content-Type header untuk mengirim email dalam bentuk HTML
                 $headers = "MIME-Version: 1.0" . "\r\n";
@@ -106,7 +108,7 @@
     <div class="container-fluid" style="padding-top: 140px;">
         <div class="col-sm-12 text-center">
           <h2 class="donasi-text">Ayo Berdonasi dengan menjual barang bekas anda!</h2>
-          <p class="text-form">Barang bekas anda dapat membantu beasiswa pendidikan anak sekolah dasar dan pemberdayaan masyarakat disabilitas.
+          <p class="text-form">Barang bekas anda dapat membantu beasiswa pendidikan anak sekolah dasar dan pemberdayaan masyarakat miskin.
           </p>
         </div>
   </div>
@@ -153,14 +155,14 @@
               </select>
             </div>
             <div id="Lainnya">
-              <input type="text" class="form-control" id="inputan" name="text" hidden="" required="" placeholder="Lainnya">
+              <input type="text" class="form-control" id="inputan" name="lainnya" hidden="" placeholder="Lainnya">
             </div>
             <br>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                   <span class="input-group-text" style="font-size: 15px;">Rp.</span>
               </div>
-              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Harga" required="">
+              <input type="text" class="form-control" id="inlineFormInputGroup" name="harga" placeholder="Harga" required="">
                <div class="input-group-prepend">
                   <span class="input-group-text" style="font-size: 15px;">-,</span>
               </div>
@@ -209,8 +211,8 @@
       var number = document.getElementById("telepon").value;
       var email = document.getElementById("email").value;
       var pesan = document.getElementById("pesan").value;
-      var harga = document.getElementById("number").value;
-      if(nama != "" && number!="" && email !="" && pesan !="" && harga !=""){
+      // var harga = document.getElementById("number").value;
+      if(nama != "" && number!="" && email !="" && pesan !=""){
         alert('Data anda telah terkirim, Silahkan menunggu konfirmasi kami melalui email');
         return true;
       }else{

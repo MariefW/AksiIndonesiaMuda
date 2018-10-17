@@ -45,7 +45,7 @@
                 $msgClassk = 'errordiv';
             }else{
                 // Pengaturan penerima email dan subjek email
-                $toEmail = 'm.ariefw@xlfutureleaders.com'; // Ganti dengan alamat email yang Anda inginkan
+                $toEmail = 'aksiindonesiamuda@yahoo.com'; // Ganti dengan alamat email yang Anda inginkan
                 $emailSubject = 'Pesan website dari '.$name;
                 $htmlContent = '<h2> Form Donasi </h2>
                     <h4>Nama</h4><p>'.$name.'</p>
@@ -105,7 +105,7 @@
     <div class="container-fluid" style="padding-top: 140px;">
         <div class="col-sm-12 text-center">
           <h2 class="donasi-text">Ayo Berdonasi!</h2>
-          <p class="text-form">Barang bekas anda dapat membantu beasiswa pendidikan anak sekolah dasar dan pemberdayaan masyarakat disabilitas.
+          <p class="text-form">Barang bekas anda dapat membantu beasiswa pendidikan anak sekolah dasar dan pemberdayaan masyarakat miskin.
           </p>
         </div>
   </div>
@@ -154,7 +154,7 @@
               </select>
             </div>
             <div class="text-center" ="Lainnya" >
-              <input type="text" class="form-control" id="inputan" name="lainnya" hidden="" required="" placeholder="Lainnya">
+              <input type="text" class="form-control" id="inputan" name="lainnya" hidden="" placeholder="Lainnya">
             </div>
             <br>
             <div class="form-group">
@@ -201,9 +201,12 @@
       var number = document.getElementById("telepon").value;
       var email = document.getElementById("email").value;
       var pesan = document.getElementById("pesan").value;
-      var alamat = document.getElementById("alamat").value;
-      var lainnya = document.getElementById("inputan").value;
-      if(nama != "" && number!="" && email !="" && pesan !="" && alamat !="" && lainnya !=""){
+      // var alamat = document.getElementById("alamat").value;
+      // var donasi = document.getElementById("donasi").value;
+      // var lainnya = document.getElementById("inputan").value;
+
+      //munculkan pemberitahuan bahwa data terkirim
+      if(nama != "" && number!="" && email !="" && pesan !="" ){
         alert('Data anda telah terkirim, Silahkan menunggu konfirmasi kami melalui email');
         return true;
       }else{

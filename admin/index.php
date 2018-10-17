@@ -1,6 +1,14 @@
-<!doctype html>
-<html lang="en">
+<?php
+include_once("../config/header.php");
 
+if(!$functions->checkSession('login'))
+{
+    header("Location: login.php");
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Dashboard | Aksi Indonesia Muda</title>
 	<meta charset="utf-8">
@@ -41,9 +49,9 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/img/aim.png" class="img-circle" alt="Avatar"> <span>Aksi Indonesia Muda</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
-								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
-								<li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+								<!-- <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
+								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li> -->
+								<li><a href="logout.php"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -69,8 +77,8 @@
 								</ul>
 							</div>
 						</li>
-						<li><a href="update.php"><i class="fa fa-refresh"></i> <span>Update</span></a></li>
-						<li><a href="profile.php"><i class="lnr lnr-user"></i> <span>Profile</span></a></li>
+						<li><a href="update.php"><i class="fa fa-refresh"></i> <span>Update Dana</span></a></li>
+						<!-- <li><a href="profile.php"><i class="lnr lnr-user"></i> <span>Profile</span></a></li> -->
 					</ul>
 				</nav>
 			</div>
@@ -79,17 +87,17 @@
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
 				<div class="container-fluid">
-					<ul class="breadcrumb">
+					<!-- <ul class="breadcrumb">
 						<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
 						<li>Dashboards</li>
-					</ul>
+					</ul> -->
 					<h1 class="page-title">Dashboards</h1>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="">
 								<div class="alert alert-info alert-dismissible" role="alert">
-									Selamat datang, <b>Superadmin Aksi Indonesia Muda</b>!<br>
-									<b>Kata sandi yang anda gunakan</b> adalah <b>kata sandi awal</b> dan <b>perlu diubah terlebih dahulu</b> untuk <b>kenyamanan dan keamanan</b> akun yang anda gunakan. Jika anda ingin mengubah kata sandi silahkan klik <a href="" data-toggle="modal" data-target="#ganti-pass"><i>Ganti Kata Sandi</i></a>.
+									Selamat datang, <?=$functions->getSession("fullname")?> (<?=$functions->getSession("userType")?>)<br>
+									<!-- <b>Kata sandi yang anda gunakan</b> adalah <b>kata sandi awal</b> dan <b>perlu diubah terlebih dahulu</b> untuk <b>kenyamanan dan keamanan</b> akun yang anda gunakan. Jika anda ingin mengubah kata sandi silahkan klik <a href="" data-toggle="modal" data-target="#ganti-pass"><i>Ganti Kata Sandi</i></a>. -->
 								</div>
 							</div>
 						</div>
@@ -120,15 +128,15 @@
 						</div>
 					</div>
 					<!-- END TASK PROGRESS -->
-					<div class="modal fade" id="ganti-pass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<!-- <div class="modal fade" id="ganti-pass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
 							<h5 class="modal-title" id="exampleModalLabel">
 								<i class="flaticon-plus"></i> Ganti Kata Sandi
 							</h5>
-						</div>
-						<div class="modal-body">
+						</div> -->
+						<!-- <div class="modal-body">
 							<form>
 								<div class="form-group">
 									<label  class="form-control-label">
@@ -149,7 +157,7 @@
 									<input type="password" class="form-control" id="">
 								</div>
 							</form>
-						</div>
+						</div> -->
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">
 								Close

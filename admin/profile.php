@@ -42,9 +42,9 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/img/aim.png" class="img-circle" alt="Avatar"> <span>Aksi Indonesia Muda</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
-								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
-								<li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+								<!-- <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
+								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li> -->
+								<li><a href="logout.php"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -65,13 +65,13 @@
 							<a href="#blog" data-toggle="collapse" class="collapsed"><i class="fa fa-navicon"></i> <span>Blog</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="blog" class="collapse ">
 								<ul class="nav">
-									<li><a href="daftar-blog.html">Daftar Blog</a></li>
-									<li><a href="tambah-blog.html">Tambah Blog</a></li>
+									<li><a href="daftar-blog.php">Daftar Blog</a></li>
+									<li><a href="tambah-blog.php">Tambah Blog</a></li>
 								</ul>
 							</div>
 						</li>
-						<li><a href="update.html"><i class="fa fa-refresh"></i> <span>Update</span></a></li>
-						<li><a href="profile.html" class="active"><i class="lnr lnr-user"></i> <span>Profile</span></a></li>
+						<li><a href="update.php"><i class="fa fa-refresh"></i> <span>Update</span></a></li>
+						<li><a href="profile.php" class="active"><i class="lnr lnr-user"></i> <span>Profile</span></a></li>
 					</ul>
 				</nav>
 			</div>
