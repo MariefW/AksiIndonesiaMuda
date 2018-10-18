@@ -326,7 +326,6 @@ ul, .social-network{
 	height: 50px;
   	max-width: 300px;
   	color: black;
-  	border-radius: 5px;
   	background-color: #2e3c51;
   	color: #fff;
 	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
@@ -337,4 +336,35 @@ ul, .social-network{
 }
 .img-sedangkan{
 	height: 50px;
+}
+#total-dana{
+	padding-top: 13px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+.box-content.box-6 .box-item .content
+{
+	padding: 10px 30px 30px;
+	background-color: white;
+	box-shadow: 0 0px 12px 2px rgba(86, 99, 116, 0.25);
+}
+.box-content.box-6 .box-item img 
+{
+	width: 100%;
+}
+.box-content.box-6 .box-item .content h3
+{
+	font-weight: 500;
+	font-size: 24px;
+	margin-bottom: 20px;
+} 
+.box-content.box-6 .box-item .content h3 a
+{
+	color: #333;
+}
+.box-content.box-6 .box-item .content span
+{
+	color: #a9a9a9;
+	font-size: 13px;
 }

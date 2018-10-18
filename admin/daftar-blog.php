@@ -1,3 +1,6 @@
+<?php
+		include_once("../config/header.php");
+ ?>
 <!doctype html>
 <html lang="en">
 
@@ -94,16 +97,38 @@
 											<tr>
 												<th>Id</th>
 												<th>Judul Blog</th>
-												<th>Penulis</th>
+												<!-- <th>Penulis</th> -->
+												<th>Isi</th>
 												<th>Tanggal</th>
 												<th>Gambar</th>
-												<th>Isi</th>
-												<th>Kategori</th>
+												<!-- <th>Kategori</th> -->
 												<th>Action</th>
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
+											<?php
+											if($functions->rowCount("blogs") > 0) {
+													$i = 1;
+													foreach($functions->fetchAll("blogs") as $row) { ?>
+															<tr>
+																	<td><?=$i?></td>
+																	<td><?=$row['judul']?></td>
+																	<td><?=$row['isi']?></td>
+																	<td><?=date_format(date_create($row['tanggal']), "d M Y")?></td>
+																	<td><?=$row['gambar']?></td>
+																	<td>
+																		<a href="" class="btn btn-primary" data-toggle="modal" data-target="#sunting"><i class="fa fa-pencil"></i>Sunting</a>
+																		<br>
+																		<br>
+																		<a href="" class="btn btn-danger"><i class="fa fa-trash-o"></i>Hapus</a>
+																</td>
+															</tr>
+												 <?php $i++; }
+											} else { ?>
+													<tr><td colspan='6'><center>No Data Avaliable</center></td></tr>
+											<?php
+											}?>
+											<!-- <tr>
 												<td>1</td>
 												<td>Gempa Lombok</td>
 												<td>Aksi Indonesia Muda</td>
@@ -121,45 +146,7 @@
 													<br>
 													<a href="" class="btn btn-danger"><i class="fa fa-trash-o"></i>Hapus</a>
 												</td>
-											</tr>
-											<tr>
-												<td>2</td>
-												<td>Penyuluhan</td>
-												<td>Aksi Indonesia Muda</td>
-												<td>09/09/2018</td>
-												<td><img src="assets/img/5.jpg"></td>
-												<td>
-													<p>
-														Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-													</p>
-												</td>
-												<td>Tips</td>
-												<td>
-													<a href="" class="btn btn-primary" data-toggle="modal" data-target="#sunting"><i class="fa fa-pencil"></i>Sunting</a>
-													<br>
-													<br>
-													<a href="" class="btn btn-danger"><i class="fa fa-trash-o"></i>Hapus</a>
-												</td>
-											</tr>
-											<tr>
-												<td>3</td>
-												<td>Sosialisasi</td>
-												<td>Aksi Indonesia Muda</td>
-												<td>07/08/2018</td>
-												<td><img src="assets/img/5.jpg"></td>
-												<td>
-													<p>
-														Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-													</p>
-												</td>
-												<td>Pendidikan</td>
-												<td>
-													<a href="" class="btn btn-primary" data-toggle="modal" data-target="#sunting"><i class="fa fa-pencil"></i>Sunting</a>
-													<br>
-													<br>
-													<a href="" class="btn btn-danger"><i class="fa fa-trash-o"></i>Hapus</a>
-												</td>
-											</tr>
+											</tr> -->
 										</tbody>
 									</table>
 								</div>

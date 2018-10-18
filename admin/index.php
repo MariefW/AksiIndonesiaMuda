@@ -92,16 +92,6 @@ if(!$functions->checkSession('login'))
 						<li>Dashboards</li>
 					</ul> -->
 					<h1 class="page-title">Dashboards</h1>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="">
-								<div class="alert alert-info alert-dismissible" role="alert">
-									Selamat datang, <?=$functions->getSession("fullname")?> (<?=$functions->getSession("userType")?>)<br>
-									<!-- <b>Kata sandi yang anda gunakan</b> adalah <b>kata sandi awal</b> dan <b>perlu diubah terlebih dahulu</b> untuk <b>kenyamanan dan keamanan</b> akun yang anda gunakan. Jika anda ingin mengubah kata sandi silahkan klik <a href="" data-toggle="modal" data-target="#ganti-pass"><i>Ganti Kata Sandi</i></a>. -->
-								</div>
-							</div>
-						</div>
-					</div>
 					<!-- TASK PROGRESS -->
 					<div class="row">
 						<div class="col-md-6">
@@ -126,82 +116,9 @@ if(!$functions->checkSession('login'))
 								<span class="percentage">50%</span>
 							</div>
 						</div>
-					</div>
-					<!-- END TASK PROGRESS -->
-					<!-- <div class="modal fade" id="ganti-pass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="exampleModalLabel">
-								<i class="flaticon-plus"></i> Ganti Kata Sandi
-							</h5>
-						</div> -->
-						<!-- <div class="modal-body">
-							<form>
-								<div class="form-group">
-									<label  class="form-control-label">
-										Password Lama
-									</label>
-									<input type="password" class="form-control" id="">
-								</div>
-								<div class="form-group">
-									<label  class="form-control-label">
-										Password Baru
-									</label>
-									<input type="password" class="form-control" id="">
-								</div>
-								<div class="form-group">
-									<label  class="form-control-label">
-										Confirmasi Password
-									</label>
-									<input type="password" class="form-control" id="">
-								</div>
-							</form>
-						</div> -->
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">
-								Close
-							</button>
-							<button type="button" class="btn btn-primary">
-								Save
-							</button>
-						</div>
-					</div>
-					</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<!-- WEEKLY VISITS -->
-							<div class="panel panel-solid-blue">
-								<div class="panel-heading">
-									<h3 class="panel-title">Grafik Pengunjung</h3>
-								</div>
-								<div class="panel-body no-padding">
-									<div class="panel-content-wrapper">
-										<div style="height: 250px;" id="visit-chart"></div>
-									</div>
-									<div class="padding-25">
-										<div class="row">
-											<div class="col-sm-6">
-												<div id="tour-visits" class="visits-metric text-center">
-													<span class="title">Visits</span>
-													<span class="value">13,754</span>
-													<span class="change text-success">37,15%</span>
-												</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="visits-metric text-center">
-													<span class="title">Page Views</span>
-													<span class="value">23,473</span>
-													<span class="change text-success">12,35%</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- END WEEKLY VISITS -->
-						</div>
+  					     </div>
+  					   </div>
+  					</div>
 					</div>
 				</div>
 			</div>

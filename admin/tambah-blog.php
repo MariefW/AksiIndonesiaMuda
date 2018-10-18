@@ -103,10 +103,10 @@ if(!$functions->checkSession('login'))
 										<label for="contact-name" class="control-label">Judul Blog</label>
 										<input type="text" class="form-control" id="contact-name" placeholder="Masukkan Judul Blog">
 									</div>
-									<div class="form-group">
+									<!-- <div class="form-group">
 										<label for="contact-name" class="control-label">Penulis</label>
 										<input type="text" class="form-control" id="contact-name" placeholder="Penulis">
-									</div>
+									</div> -->
 									<div class="input-group">
 										<label for="contact-date" class="control-label">Tanggal Penulisan</label>
 										<input type="date" class="form-control" id="contact-date" value="">
