@@ -96,7 +96,6 @@
             <center>
             <div class="rectangle text-center">
               <p style="padding-top: 11px;">
-                <!-- Rp. 1.000.000.000-, -->
                 Rp. <?php $functions->fetchdana(); ?> -,
               </p>
             </div>

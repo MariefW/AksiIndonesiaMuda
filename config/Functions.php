@@ -5,9 +5,19 @@ class Functions extends Session {
   private $db;
 
   function __construct(){
+
+        // require_once'database.php';
+        include 'database.php';
+
         session_start();
-        include_once("database.php");
         $this->db = $dbConn;
+  }
+
+  function jumlPost(){
+    $stmt = $this->db->prepare("SELECT * FROM blogs");
+    $stmt->execute();
+    $var = mysql_num_rows($stmt);
+    var_dump($var);
   }
 
   function fetchdana(){
@@ -16,8 +26,6 @@ class Functions extends Session {
     while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
       echo number_format( $result['dana'],0,",","." );
     }
-    // $result = $this->db->query("SELECT * FROM totaldana");
-    // return $result->fetchdana(PDO::FETCH_ASSOC);
   }
 
   function updateDana(){
@@ -32,7 +40,7 @@ class Functions extends Session {
     }
   }
 
-  function fetchAll($table, $column = null, $order = "id DESC"){
+  function fetchAll($table, $column = null, $order = "id ASC"){
       if($column != null) {
           if(is_array($column)){
               $columns = implode(",",$column);
@@ -74,7 +82,70 @@ class Functions extends Session {
       $this->deleteSession();
       return true;
   }
-}
 
+  function createpost($judul="", $isi="", $tanggal="", $gambar="",$tmp_dir="",$imgSize=""){
+    $upload_dir = "gambar2/";
+    $imgExt = strtolower(pathinfo($gambar,PATHINFO_EXTENSION));
+    // $valid_extensions = array('jpeg', 'jpg', 'png', 'gif');
+    $userpic = rand(1000,1000000).".".$imgExt;
+
+    $judul = filter_var($judul, FILTER_SANITIZE_STRING,FILTER_SANITIZE_SPECIAL_CHARS );
+    $isi = filter_var($isi, FILTER_SANITIZE_SPECIAL_CHARS);
+    $tanggal = filter_var($tanggal, FILTER_SANITIZE_SPECIAL_CHARS);
+    $gambar = filter_var($gambar, FILTER_SANITIZE_SPECIAL_CHARS);
+
+    move_uploaded_file($tmp_dir,$upload_dir.$userpic);
+    // if(in_array($imgExt, $valid_extensions)){
+    //     // Check file size '5MB'
+    //     if($imgSize < 5000000)    {
+    //      move_uploaded_file($tmp_dir,$upload_dir.$userpic);
+    //     }
+    //     else{
+    //      $errMSG = "Sorry, your file is too large.";
+    //     }
+    //    }
+    //    else{
+    //     $errMSG = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+    //    }
+
+
+    $stmt = $this->db->prepare("INSERT INTO blogs(judul,isi,tanggal,gambar) VALUES(:judul, :isi, :tanggal, :gambar)");
+    $stmt->bindparam(':judul', $judul, PDO::PARAM_STR);
+    $stmt->bindparam(':isi', $isi, PDO::PARAM_STR);
+    $stmt->bindparam(':tanggal', $tanggal, PDO::PARAM_STR);
+    $stmt->bindparam(':gambar', $userpic);
+    if ($stmt->execute()) {
+      ?>
+      <script>
+        alert("Blog berhasil dibuat");
+        window.location.href='daftar-blog.php';
+      </script>
+      <?php
+    }else {
+      ?>
+      <script>
+        alert("Blog gagal dibuat");
+      </script>
+      <?php
+    }
+    // header('Location: index.php');
+    // echo "Postingan berhasil";
+    // alert("Anda berhasil membuat postingan");
+    // exit();
+  }
+
+  function deletepost($id){
+    $stmt_select = $this->db->prepare('SELECT gambar FROM blogs WHERE id =:id');
+    $stmt_select->execute(array(':id'=>$_GET['id']));
+    $imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
+    unlink("gambar2/".$imgRow['gambar']);
+
+    $stmt = $this->db->prepare("DELETE FROM blogs WHERE id=:id");
+    $stmt->execute(array(':id'=>$id));
+    header('Location: daftar-blog.php');
+    exit();
+
+  }
+}
 
  ?>
